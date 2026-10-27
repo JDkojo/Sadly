@@ -35,12 +35,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, variant = 'gr
                 PROMO
               </span>
             )}
-            <span className="absolute bottom-1.5 right-1.5 bg-white/90 backdrop-blur-xs text-[#0c200d] text-[10px] px-1.5 py-0.5 rounded-md flex items-center gap-0.5 font-bold shadow-xs">
-              <span className="material-symbols-outlined text-[12px] text-[#fd761a]" style={{ fontVariationSettings: "'FILL' 1" }}>
-                star
-              </span>
-              {product.rating}
-            </span>
           </div>
 
           <div className="flex flex-col">
@@ -133,13 +127,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, variant = 'gr
               {topBadge.text}
             </span>
           )}
-
-          <span className="absolute bottom-1 right-1 bg-white/95 backdrop-blur-sm rounded-md px-1 py-0.5 flex items-center gap-0.5 text-[9px] font-bold text-[#0c200d] shadow-xs">
-            <span className="material-symbols-outlined text-[#fd761a] text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>
-              star
-            </span>
-            {product.rating}
-          </span>
         </div>
 
         <h3 className="text-[11px] leading-tight text-[#0c200d] font-bold line-clamp-2 min-h-[2.5em] group-hover:text-[#00652c] transition-colors">

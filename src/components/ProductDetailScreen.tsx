@@ -79,18 +79,9 @@ export const ProductDetailScreen: React.FC<ProductDetailProps> = ({ product }) =
       {/* Info Card */}
       <div className="px-3.5 pb-3">
         <div className="bg-white rounded-3xl p-4 shadow-xs border border-[#becabc]/30 flex flex-col gap-2">
-          <div className="flex items-center justify-between">
-            <span className="text-[11px] font-black uppercase tracking-wider text-[#00652c]">
-              SKU: {product.sku || 'SA-PROV'}
-            </span>
-            <div className="flex items-center gap-1 bg-[#dcf5d6] px-2 py-0.5 rounded-full">
-              <span className="material-symbols-outlined text-[#fd761a] text-[13px]" style={{ fontVariationSettings: "'FILL' 1" }}>
-                star
-              </span>
-              <span className="text-[11px] font-bold text-[#0c200d]">{product.rating}</span>
-              <span className="text-[10px] text-[#3f493f]">({product.reviewCount})</span>
-            </div>
-          </div>
+          <span className="text-[11px] font-black uppercase tracking-wider text-[#00652c]">
+            SKU: {product.sku || 'SA-PROV'}
+          </span>
 
           <h1 className="text-[19px] font-black text-[#0c200d] tracking-tight leading-snug">
             {product.name}

@@ -8,8 +8,6 @@ export interface Product {
   unitPrice?: string;
   images: string[];
   badges: { text: string; variant: 'primary' | 'secondary' | 'accent' | 'neutral' }[];
-  rating: number;
-  reviewCount: number;
   description: string;
   packageDetails?: string;
   inStock: boolean;
