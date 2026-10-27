@@ -23,7 +23,7 @@ export const EntrancePosterModal: React.FC = () => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#213521]/75 backdrop-blur-sm animate-fade-in">
-      <div className="relative w-full max-w-sm bg-white rounded-3xl p-6 shadow-2xl flex flex-col items-center border border-[#becabc]/40 text-center">
+      <div className="relative w-full max-w-sm max-h-full overflow-y-auto overscroll-contain bg-white rounded-3xl p-5 min-[360px]:p-6 shadow-2xl flex flex-col items-center border border-[#becabc]/40 text-center">
         {/* Close Button */}
         <button
           onClick={() => setIsPosterModalOpen(false)}

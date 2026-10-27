@@ -65,23 +65,23 @@ export const StaffScreen: React.FC = () => {
   return (
     <div className="flex flex-col w-full px-4 pb-28 gap-4 pt-3 box-border">
       {/* Staff Executive Top Bar */}
-      <div className="bg-[#213521] text-white rounded-3xl p-4 shadow-md flex items-center justify-between border border-[#3f493f]">
-        <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-2xl bg-[#00652c] text-white flex items-center justify-center font-black shadow-xs">
+      <div className="bg-[#213521] text-white rounded-3xl p-3 min-[360px]:p-4 shadow-md flex items-center justify-between gap-2 border border-[#3f493f]">
+        <div className="flex items-center gap-2 min-[360px]:gap-3 min-w-0">
+          <div className="w-10 h-10 min-[360px]:w-11 min-[360px]:h-11 shrink-0 rounded-2xl bg-[#00652c] text-white flex items-center justify-center font-black shadow-xs">
             <span className="material-symbols-outlined text-[24px]">point_of_sale</span>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col min-w-0">
             <div className="flex items-center gap-2">
-              <span className="text-[15px] font-black tracking-tight">Kofi's Pickup Window</span>
-              <span className="w-2 h-2 rounded-full bg-[#7ffc97] animate-pulse"></span>
+              <span className="text-[14px] min-[360px]:text-[15px] font-black tracking-tight leading-tight">Kofi's Pickup Window</span>
+              <span className="w-2 h-2 shrink-0 rounded-full bg-[#7ffc97] animate-pulse"></span>
             </div>
-            <span className="text-[11px] text-[#79db8d] font-medium">
+            <span className="text-[11px] text-[#79db8d] font-medium truncate">
               Sadly Prime · Window #1 Active
             </span>
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 shrink-0">
           <button
             onClick={() => setIsPosterModalOpen(true)}
             title="Print Storefront Poster"
@@ -92,10 +92,11 @@ export const StaffScreen: React.FC = () => {
 
           <button
             onClick={handleExitStaffMode}
-            className="bg-[#00652c] hover:bg-[#15803d] text-white px-3.5 py-2 rounded-full text-[12px] font-bold flex items-center gap-1 shadow-xs cursor-pointer active:scale-95 transition-all"
+            aria-label="Customer View"
+            className="bg-[#00652c] hover:bg-[#15803d] text-white h-9 min-w-9 px-2 min-[400px]:px-3.5 rounded-full text-[12px] font-bold flex items-center justify-center gap-1 shadow-xs cursor-pointer active:scale-95 transition-all"
           >
             <span className="material-symbols-outlined text-[16px]">logout</span>
-            <span>Customer View</span>
+            <span className="hidden min-[400px]:inline whitespace-nowrap">Customer View</span>
           </button>
         </div>
       </div>

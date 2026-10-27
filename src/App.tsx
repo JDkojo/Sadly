@@ -15,9 +15,9 @@ const AppContent: React.FC = () => {
   const { activeTab, selectedProduct } = useCart();
 
   return (
-    <div className="min-h-screen w-full bg-[#ebffe5] font-sans antialiased text-[#0c200d] relative flex flex-col items-center overflow-x-hidden">
+    <div className="min-h-dvh w-full bg-[#ebffe5] font-sans antialiased text-[#0c200d] relative flex flex-col items-center overflow-x-hidden">
       {/* Maximum Mobile Frame constraint perfectly centered without overflow */}
-      <div className="w-full max-w-md min-h-screen flex flex-col relative bg-[#ebffe5] shadow-xl overflow-x-hidden box-border">
+      <div className="w-full max-w-md min-h-dvh flex flex-col relative bg-[#ebffe5] shadow-xl overflow-x-hidden box-border">
         {/* Sticky Header with S.P branding & QR actions */}
         <Header />
 

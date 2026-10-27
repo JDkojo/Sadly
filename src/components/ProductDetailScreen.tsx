@@ -91,9 +91,9 @@ export const ProductDetailScreen: React.FC<ProductDetailProps> = ({ product }) =
             {product.description}
           </p>
 
-          <div className="flex items-baseline justify-between pt-1 border-t border-[#f1f5f0]">
-            <div className="flex items-baseline gap-2">
-              <span className="text-[26px] text-[#00652c] font-black tracking-tight">
+          <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-1 pt-1 border-t border-[#f1f5f0]">
+            <div className="flex items-baseline gap-2 whitespace-nowrap">
+              <span className="text-[24px] min-[360px]:text-[26px] text-[#00652c] font-black tracking-tight">
                 GH₵ {product.price.toFixed(2)}
               </span>
               {product.originalPrice && (
@@ -102,7 +102,7 @@ export const ProductDetailScreen: React.FC<ProductDetailProps> = ({ product }) =
                 </span>
               )}
             </div>
-            <span className="text-[11px] bg-[#e1fbdc] text-[#00652c] px-2.5 py-1 rounded-full font-bold">
+            <span className="text-[11px] bg-[#e1fbdc] text-[#00652c] px-2.5 py-1 rounded-full font-bold whitespace-nowrap">
               {product.unit}
             </span>
           </div>
@@ -169,8 +169,14 @@ export const ProductDetailScreen: React.FC<ProductDetailProps> = ({ product }) =
           <span className="material-symbols-outlined text-[20px]">
             {isAddedFeedback ? 'check_circle' : 'shopping_basket'}
           </span>
-          <span>
-            {isAddedFeedback ? '✓ Added to Basket!' : `Add to Basket · GH₵ ${currentPrice}`}
+          <span className="whitespace-nowrap">
+            {isAddedFeedback ? (
+              '✓ Added!'
+            ) : (
+              <>
+                Add<span className="hidden min-[375px]:inline"> to Basket</span> · GH₵ {currentPrice}
+              </>
+            )}
           </span>
         </button>
       </div>

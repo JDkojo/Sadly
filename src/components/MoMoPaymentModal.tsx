@@ -43,7 +43,7 @@ export const MoMoPaymentModal: React.FC = () => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4 bg-[#213521]/75 backdrop-blur-sm animate-fade-in">
-      <div className="relative w-full max-w-md bg-white rounded-t-3xl sm:rounded-3xl p-5 shadow-2xl flex flex-col gap-3.5 border border-[#becabc]/40">
+      <div className="relative w-full max-w-md max-h-full overflow-y-auto overscroll-contain bg-white rounded-t-3xl sm:rounded-3xl p-5 pb-[calc(1.25rem+env(safe-area-inset-bottom))] shadow-2xl flex flex-col gap-3.5 border border-[#becabc]/40">
         {/* Header */}
         <div className="flex items-center justify-between pb-2 border-b border-[#becabc]/20">
           <div className="flex items-center gap-2">
