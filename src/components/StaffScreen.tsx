@@ -260,7 +260,7 @@ export const StaffScreen: React.FC = () => {
             <form onSubmit={handleManualSubmit} className="flex gap-2 pt-1">
               <input
                 type="text"
-                placeholder="Or enter order code (e.g. SA-017)"
+                placeholder="Or enter order code (e.g. SP-017)"
                 value={inputCode}
                 onChange={(e) => setInputCode(e.target.value.toUpperCase())}
                 className="flex-1 h-11 px-3.5 rounded-xl bg-[#f8faf6] border border-[#becabc]/50 text-[14px] font-mono font-bold text-[#0c200d] focus:outline-none focus:ring-2 focus:ring-[#00652c]"
@@ -301,34 +301,34 @@ export const StaffScreen: React.FC = () => {
 
                 <div className="grid grid-cols-2 gap-2">
                   <button
-                    onClick={() => handleScanSubmit('SA-017')}
+                    onClick={() => handleScanSubmit('SP-017')}
                     className="p-2.5 bg-[#e1fbdc] hover:bg-[#d0e9cb] text-[#00652c] rounded-2xl text-[11px] font-bold text-left flex flex-col gap-1 border border-[#00652c]/20 cursor-pointer"
                   >
-                    <span className="text-[12px] font-black">SA-017 (Ama)</span>
+                    <span className="text-[12px] font-black">SP-017 (Ama)</span>
                     <span className="text-[10px] text-[#00652c]">Valid Paid & Ready → GREEN</span>
                   </button>
 
                   <button
-                    onClick={() => handleScanSubmit('SA-018')}
+                    onClick={() => handleScanSubmit('SP-018')}
                     className="p-2.5 bg-[#fff9db] hover:bg-[#ffdbca] text-[#9d4300] rounded-2xl text-[11px] font-bold text-left flex flex-col gap-1 border border-[#fd761a]/30 cursor-pointer"
                   >
-                    <span className="text-[12px] font-black">SA-018 (Yaa)</span>
+                    <span className="text-[12px] font-black">SP-018 (Yaa)</span>
                     <span className="text-[10px] text-[#9d4300]">Still Packing → YELLOW</span>
                   </button>
 
                   <button
-                    onClick={() => handleScanSubmit('SA-015')}
+                    onClick={() => handleScanSubmit('SP-015')}
                     className="p-2.5 bg-[#ffdad6] hover:bg-[#ffb690] text-[#ba1a1a] rounded-2xl text-[11px] font-bold text-left flex flex-col gap-1 border border-[#ba1a1a]/30 cursor-pointer"
                   >
-                    <span className="text-[12px] font-black">SA-015 (Kwesi)</span>
+                    <span className="text-[12px] font-black">SP-015 (Kwesi)</span>
                     <span className="text-[10px] text-[#ba1a1a]">Already Collected → RED</span>
                   </button>
 
                   <button
-                    onClick={() => handleScanSubmit('SA-019')}
+                    onClick={() => handleScanSubmit('SP-019')}
                     className="p-2.5 bg-[#ffdad6] hover:bg-[#ffb690] text-[#ba1a1a] rounded-2xl text-[11px] font-bold text-left flex flex-col gap-1 border border-[#ba1a1a]/30 cursor-pointer"
                   >
-                    <span className="text-[12px] font-black">SA-019 (Kojo)</span>
+                    <span className="text-[12px] font-black">SP-019 (Kojo)</span>
                     <span className="text-[10px] text-[#ba1a1a]">Unpaid Ticket → RED</span>
                   </button>
 

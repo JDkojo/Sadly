@@ -74,7 +74,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   // Orders store
   const [orders, setOrders] = useState<OrderState[]>(INITIAL_ORDERS);
-  const [currentOrderId, setCurrentOrderId] = useState<string>('SA-017');
+  const [currentOrderId, setCurrentOrderId] = useState<string>('SP-017');
 
   // Modals
   const [isPosterModalOpen, setIsPosterModalOpen] = useState(false);
@@ -146,7 +146,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const placeMoMoOrder = (network: string, phone: string): OrderState => {
     const nextNum = Math.floor(20 + Math.random() * 80);
-    const newId = `SA-0${nextNum}`;
+    const newId = `SP-0${nextNum}`;
 
     const newOrder: OrderState = {
       orderId: newId,

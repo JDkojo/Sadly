@@ -34,7 +34,7 @@ export const BottomNav: React.FC = () => {
           >
             storefront
           </span>
-          <span className="text-[11px] font-semibold mt-0.5">S.A Shelf</span>
+          <span className="text-[11px] font-semibold mt-0.5">S.P Shelf</span>
         </button>
 
         {/* Basket */}

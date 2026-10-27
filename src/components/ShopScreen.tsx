@@ -124,7 +124,7 @@ export const ShopScreen: React.FC = () => {
           className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#213521] text-white hover:bg-[#00652c] text-[11px] font-bold transition-all shadow-xs active:scale-95 cursor-pointer"
         >
           <span className="material-symbols-outlined text-[16px]">badge</span>
-          <span>Staff Window Portal · Kofi & Mr. S.A</span>
+          <span>Staff Window Portal · Kofi & Mr. S.P</span>
         </button>
         <span className="text-[10px] text-[#6f7a6e] mt-1.5">
           Dedicated pickup terminal with live camera QR scanner & fraud prevention

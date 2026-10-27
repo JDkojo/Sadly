@@ -18,7 +18,7 @@ const AppContent: React.FC = () => {
     <div className="min-h-screen w-full bg-[#ebffe5] font-sans antialiased text-[#0c200d] relative flex flex-col items-center overflow-x-hidden">
       {/* Maximum Mobile Frame constraint perfectly centered without overflow */}
       <div className="w-full max-w-md min-h-screen flex flex-col relative bg-[#ebffe5] shadow-xl overflow-x-hidden box-border">
-        {/* Sticky Header with S.A branding & QR actions */}
+        {/* Sticky Header with S.P branding & QR actions */}
         <Header />
 
         {/* Dynamic Toast Alerts */}

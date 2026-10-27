@@ -16,7 +16,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Nourishing malt chocolate energy food drink with Actigen-E, 8 vitamins, and 4 minerals. The classic breakfast choice.',
     packageDetails: '400g sealed foil pouch refill. Store in airtight container.',
     inStock: true,
-    sku: 'SA-ML-400',
+    sku: 'SP-ML-400',
   },
   {
     id: 'st-louis-sugar',
@@ -32,7 +32,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Pure granulated refined cane sugar cubes, dissolves quickly in tea, coffee, cocoa, and porridge.',
     packageDetails: '500g cardboard dispenser box with quick-access flip top.',
     inStock: true,
-    sku: 'SA-SUG-500',
+    sku: 'SP-SUG-500',
   },
   {
     id: 'omo-powder',
@@ -48,7 +48,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Tough stain removal in 1 wash. Specially formulated with bleach booster foam for hand and machine wash.',
     packageDetails: '500g moisture-barrier sachet pack.',
     inStock: true,
-    sku: 'SA-OMO-500',
+    sku: 'SP-OMO-500',
   },
   {
     id: 'ideal-milk',
@@ -64,7 +64,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Thick, creamy evaporated milk enriched with vitamin D, calcium, and protein. Perfect for tea, porridge, and coffee.',
     packageDetails: '160g easy-open tin.',
     inStock: true,
-    sku: 'SA-IDL-160',
+    sku: 'SP-IDL-160',
   },
   {
     id: 'peak-milk',
@@ -79,7 +79,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Made from fresh cow milk, fortified with 28 essential vitamins and minerals for energy and vitality.',
     packageDetails: '170g easy-pour tin.',
     inStock: true,
-    sku: 'SA-PK-170',
+    sku: 'SP-PK-170',
   },
   {
     id: 'geisha-sardines',
@@ -95,7 +95,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Tender mackerel fish steaks immersed in rich spiced tomato sauce. High in Omega-3 and natural protein.',
     packageDetails: '425g large family tin.',
     inStock: true,
-    sku: 'SA-GEI-425',
+    sku: 'SP-GEI-425',
   },
   {
     id: 'titus-sardines',
@@ -110,7 +110,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Original wild-caught Moroccan sardines packed in pure soybean oil with natural salt. Great with bread, gari, and rice.',
     packageDetails: '125g pull-ring tin.',
     inStock: true,
-    sku: 'SA-TIT-125',
+    sku: 'SP-TIT-125',
   },
   {
     id: 'indomie-noodles',
@@ -125,7 +125,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Quick cooking noodles with signature aromatic chicken seasoning powder, chili, and seasoned oil.',
     packageDetails: 'Bundle of 5 individual 70g packs.',
     inStock: true,
-    sku: 'SA-IND-5PK',
+    sku: 'SP-IND-5PK',
   },
   {
     id: 'gino-tomato',
@@ -140,7 +140,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Thick, rich red double-concentrated tomato puree for savory stews, jollof rice, and soups.',
     packageDetails: 'Tear-and-pour sachet 3-pack.',
     inStock: true,
-    sku: 'SA-GIN-3PK',
+    sku: 'SP-GIN-3PK',
   },
   {
     id: 'tasty-tom',
@@ -155,7 +155,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Thick tomato paste seasoned with onion and enriched with Vitamins A, D, E, and K for deep red color and flavor.',
     packageDetails: '400g canned tin.',
     inStock: true,
-    sku: 'SA-TTOM-400',
+    sku: 'SP-TTOM-400',
   },
   {
     id: 'lipton-tea',
@@ -170,7 +170,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Classic high-grown black tea leaves carefully processed to release natural rich aroma and brisk taste.',
     packageDetails: '25 envelope tea bags in box.',
     inStock: true,
-    sku: 'SA-LIP-25',
+    sku: 'SP-LIP-25',
   },
   {
     id: 'pepsodent',
@@ -185,7 +185,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Anti-cavity formula with active micro-calcium and fluoride for strong enamel, healthy gums, and fresh breath.',
     packageDetails: '140g squeezable tube.',
     inStock: true,
-    sku: 'SA-PEP-140',
+    sku: 'SP-PEP-140',
   },
   {
     id: 'closeup-toothpaste',
@@ -200,7 +200,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Spicy clove & cinnamon red gel with antibacterial mouthwash formula for 12 hours of intense fresh breath.',
     packageDetails: '140g red gel tube in protective carton.',
     inStock: true,
-    sku: 'SA-CLU-140',
+    sku: 'SP-CLU-140',
   },
   {
     id: 'key-soap',
@@ -215,7 +215,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Famous Ghanaian long-lasting bar soap for laundry, dishwashing, and all household cleaning. Gentle on hands.',
     packageDetails: 'Single bar wrapped in paper.',
     inStock: true,
-    sku: 'SA-KEY-BAR',
+    sku: 'SP-KEY-BAR',
   },
   {
     id: 'sunlight-powder',
@@ -231,7 +231,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: '2-in-1 detergent powder with softening crystals and long-lasting floral fragrance.',
     packageDetails: '900g value pack.',
     inStock: true,
-    sku: 'SA-SUN-900',
+    sku: 'SP-SUN-900',
   },
   {
     id: 'dettol',
@@ -246,7 +246,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Proven disinfectant liquid for wound hygiene, personal bathing sanitation, and household surface disinfection.',
     packageDetails: '125ml bottle with safety twist seal cap.',
     inStock: true,
-    sku: 'SA-DET-125',
+    sku: 'SP-DET-125',
   },
   {
     id: 'blue-band',
@@ -261,7 +261,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Fortified bread spread made with canola and vegetable oils. Rich in essential fatty acids for growing children.',
     packageDetails: '250g resealable plastic tub.',
     inStock: true,
-    sku: 'SA-BB-250',
+    sku: 'SP-BB-250',
   },
   {
     id: 'frytol-oil',
@@ -277,7 +277,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Triple refined 100% pure vegetable cooking oil, cholesterol-free and naturally fortified with Vitamin A.',
     packageDetails: '1L PET bottle with tamper-evident pour cap.',
     inStock: true,
-    sku: 'SA-FRY-1L',
+    sku: 'SP-FRY-1L',
   },
   {
     id: 'cowbell-milk',
@@ -292,7 +292,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Instant full cream milk powder fortified with 28 vitamins and minerals. Easily dissolves in cold or warm water.',
     packageDetails: '400g vacuum-sealed foil refill.',
     inStock: true,
-    sku: 'SA-CB-400',
+    sku: 'SP-CB-400',
   },
   {
     id: 'malta-guinness',
@@ -307,7 +307,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Africa’s number one non-alcoholic, premium malt drink packed with vitamins B1, B2, B3, B5, and B6 for natural goodness.',
     packageDetails: 'Chilled 330ml aluminum can.',
     inStock: true,
-    sku: 'SA-MG-330',
+    sku: 'SP-MG-330',
   },
   {
     id: 'quaker-oats',
@@ -322,7 +322,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: '100% whole grain rolled oats. Rich in beta-glucan soluble fiber that helps support heart health and digestion.',
     packageDetails: '500g reusable tin container.',
     inStock: true,
-    sku: 'SA-QKO-500',
+    sku: 'SP-QKO-500',
   },
   {
     id: 'kingsbite-chocolate',
@@ -337,7 +337,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Authentic Ghanaian milk chocolate made with 100% premium Ghana cocoa beans. Rich, creamy, and melts in your mouth.',
     packageDetails: '100g foil-wrapped chocolate bar.',
     inStock: true,
-    sku: 'SA-KB-100',
+    sku: 'SP-KB-100',
   },
   {
     id: 'voltic-water',
@@ -352,7 +352,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Pure, refreshing natural mineral water bottled at the source with balanced essential minerals. Cold and refreshing.',
     packageDetails: '1.5L PET bottle with hygiene seal.',
     inStock: true,
-    sku: 'SA-VOL-1.5L',
+    sku: 'SP-VOL-1.5L',
   },
   {
     id: 'cerelac-wheat',
@@ -367,7 +367,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Nutritious infant cereal containing CHE technology for easy digestion, fortified with Bifidus BL, iron, and zinc.',
     packageDetails: '400g tin with measuring scoop.',
     inStock: true,
-    sku: 'SA-CER-400',
+    sku: 'SP-CER-400',
   },
   {
     id: 'nido-400g',
@@ -382,7 +382,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Rich, creamy full cream milk powder fortified with iron, zinc, and vitamins A, C, and D for the whole family.',
     packageDetails: '400g foil pouch. Reseal and store in a cool, dry place.',
     inStock: true,
-    sku: 'SA-NID-400',
+    sku: 'SP-NID-400',
   },
   {
     id: 'peak-powder-400g',
@@ -396,7 +396,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Instant filled milk powder with 28 vitamins and minerals. Mixes smoothly into tea, cereal, and porridge.',
     packageDetails: '400g resealable pouch.',
     inStock: true,
-    sku: 'SA-PKP-400',
+    sku: 'SP-PKP-400',
   },
   {
     id: 'nescafe-classic',
@@ -409,7 +409,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: '100% pure soluble coffee with a bold, rich taste. Just add hot water for a quick morning cup.',
     packageDetails: '50g glass jar with aroma-seal lid.',
     inStock: true,
-    sku: 'SA-NES-50',
+    sku: 'SP-NES-50',
   },
   {
     id: 'ovaltine-400g',
@@ -423,7 +423,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Malted chocolate food drink with vitamins and minerals. Delicious hot or cold, morning or night.',
     packageDetails: '400g tin with resealable lid.',
     inStock: true,
-    sku: 'SA-OVA-400',
+    sku: 'SP-OVA-400',
   },
   {
     id: 'royal-aroma-rice',
@@ -438,7 +438,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Premium long-grain fragrant jasmine rice. Cooks soft and fluffy, perfect for jollof, waakye, and plain rice.',
     packageDetails: '5kg woven bag with carry handle.',
     inStock: true,
-    sku: 'SA-RAR-5KG',
+    sku: 'SP-RAR-5KG',
   },
   {
     id: 'golden-penny-spaghetti',
@@ -451,7 +451,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Durum wheat semolina spaghetti that holds its shape. Ready in 10 minutes for stir-fry or tomato stew.',
     packageDetails: '500g sealed pack.',
     inStock: true,
-    sku: 'SA-GPS-500',
+    sku: 'SP-GPS-500',
   },
   {
     id: 'maggi-star-cubes',
@@ -464,7 +464,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Classic seasoning cubes for soups, stews, jollof, and sauces. Adds rich, savory flavor to every pot.',
     packageDetails: 'Pack of 100 individually wrapped cubes.',
     inStock: true,
-    sku: 'SA-MAG-100',
+    sku: 'SP-MAG-100',
   },
   {
     id: 'exeter-corned-beef',
@@ -477,7 +477,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Tender cooked and cured beef from Argentina. Great in stews, sandwiches, and with boiled yam or rice.',
     packageDetails: '340g key-open tin.',
     inStock: true,
-    sku: 'SA-EXE-340',
+    sku: 'SP-EXE-340',
   },
   {
     id: 'heinz-baked-beans',
@@ -490,7 +490,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Navy beans in a rich tomato sauce. A quick, filling side for bread, eggs, or plantain.',
     packageDetails: '415g ring-pull tin.',
     inStock: true,
-    sku: 'SA-HBB-415',
+    sku: 'SP-HBB-415',
   },
   {
     id: 'nkulenu-palm-soup',
@@ -503,7 +503,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: "Ghana's original spiced palm nut concentrate. Makes authentic palm nut soup in minutes without pounding.",
     packageDetails: '800g tin. Refrigerate after opening.',
     inStock: true,
-    sku: 'SA-NKU-800',
+    sku: 'SP-NKU-800',
   },
   {
     id: 'coca-cola-500ml',
@@ -516,7 +516,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'The original refreshing cola taste, served chilled straight from the store fridge.',
     packageDetails: 'Chilled 500ml PET bottle.',
     inStock: true,
-    sku: 'SA-COK-500',
+    sku: 'SP-COK-500',
   },
   {
     id: 'fanta-orange-500ml',
@@ -529,7 +529,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Bright, bubbly orange-flavored soft drink. A favorite with kids and at every party.',
     packageDetails: 'Chilled 500ml PET bottle.',
     inStock: true,
-    sku: 'SA-FAN-500',
+    sku: 'SP-FAN-500',
   },
   {
     id: 'kalyppo-juice',
@@ -542,7 +542,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Ghanaian fruit juice drink with real pineapple taste. The perfect lunchbox and school-bag drink.',
     packageDetails: '250ml carton with straw.',
     inStock: true,
-    sku: 'SA-KAL-250',
+    sku: 'SP-KAL-250',
   },
   {
     id: 'vaseline-jelly',
@@ -555,7 +555,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Triple-purified petroleum jelly that locks in moisture to heal dry skin, lips, heels, and elbows.',
     packageDetails: '100ml screw-top tub.',
     inStock: true,
-    sku: 'SA-VAS-100',
+    sku: 'SP-VAS-100',
   },
   {
     id: 'always-pads',
@@ -568,7 +568,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Ultra thin pads with wings and up to 100% leak-free protection for comfortable, worry-free nights.',
     packageDetails: '16 individually wrapped pads.',
     inStock: true,
-    sku: 'SA-ALW-16',
+    sku: 'SP-ALW-16',
   },
   {
     id: 'harpic-cleaner',
@@ -581,7 +581,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Thick toilet cleaner that removes tough stains and limescale, leaving the bowl sparkling and fresh.',
     packageDetails: '500ml angled-neck bottle with child-resistant cap.',
     inStock: true,
-    sku: 'SA-HAR-500',
+    sku: 'SP-HAR-500',
   },
   {
     id: 'mortein-spray',
@@ -594,7 +594,7 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Fast-acting spray that kills mosquitoes, flies, and cockroaches. Keep your home bite-free at night.',
     packageDetails: '300ml aerosol can.',
     inStock: true,
-    sku: 'SA-MOR-300',
+    sku: 'SP-MOR-300',
   },
   {
     id: 'sunlight-dishwash',
@@ -607,14 +607,14 @@ export const PROVISION_PRODUCTS: Product[] = [
     description: 'Concentrated lemon-fresh dishwashing liquid that cuts through grease. A little goes a long way.',
     packageDetails: '750ml squeeze bottle with flip cap.',
     inStock: true,
-    sku: 'SA-SDL-750',
+    sku: 'SP-SDL-750',
   },
 ];
 
 // Pre-seeded demo orders matching the user stories
 export const INITIAL_ORDERS: OrderState[] = [
   {
-    orderId: 'SA-017',
+    orderId: 'SP-017',
     customerName: 'Ama Boateng',
     customerPhone: '024 456 7890',
     placedTime: '5:28 pm',
@@ -631,7 +631,7 @@ export const INITIAL_ORDERS: OrderState[] = [
     total: 75.5,
   },
   {
-    orderId: 'SA-015',
+    orderId: 'SP-015',
     customerName: 'Kwesi Mensah',
     customerPhone: '055 123 4567',
     placedTime: '5:10 pm',
@@ -648,7 +648,7 @@ export const INITIAL_ORDERS: OrderState[] = [
     total: 39.0,
   },
   {
-    orderId: 'SA-018',
+    orderId: 'SP-018',
     customerName: 'Yaa Asantewaa',
     customerPhone: '020 987 6543',
     placedTime: '5:32 pm',
@@ -664,7 +664,7 @@ export const INITIAL_ORDERS: OrderState[] = [
     total: 37.0,
   },
   {
-    orderId: 'SA-019',
+    orderId: 'SP-019',
     customerName: 'Kojo Antwi',
     customerPhone: '026 333 4444',
     placedTime: '5:35 pm',

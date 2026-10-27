@@ -80,7 +80,7 @@ export const ProductDetailScreen: React.FC<ProductDetailProps> = ({ product }) =
       <div className="px-3.5 pb-3">
         <div className="bg-white rounded-3xl p-4 shadow-xs border border-[#becabc]/30 flex flex-col gap-2">
           <span className="text-[11px] font-black uppercase tracking-wider text-[#00652c]">
-            SKU: {product.sku || 'SA-PROV'}
+            SKU: {product.sku || 'SP-PROV'}
           </span>
 
           <h1 className="text-[19px] font-black text-[#0c200d] tracking-tight leading-snug">
