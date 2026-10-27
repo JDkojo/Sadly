@@ -1,0 +1,6 @@
+{
+  "name": "Sadly Prime",
+  "description": "Fast mobile ordering and express pickup at Sadly Prime. Pay with MoMo (0597117861) and collect instantly at the window.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

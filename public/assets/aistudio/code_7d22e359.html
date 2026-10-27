@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Verde Market</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#62df7d", "on-tertiary-fixed": "#002109", "outline": "#6f7a6e", "on-primary": "#ffffff", "surface": "#ebffe5", "inverse-on-surface": "#dff8d9", "tertiary-fixed": "#7ffc97", "primary": "#00652c", "surface-container-low": "#e1fbdc", "on-tertiary-container": "#d4ffd4", "on-secondary": "#ffffff", "on-secondary-fixed": "#341100", "on-error-container": "#93000a", "surface-dim": "#c8e1c3", "tertiary-container": "#008137", "surface-container-high": "#d6efd0", "surface-container-lowest": "#ffffff", "on-surface-variant": "#3f493f", "secondary-container": "#fd761a", "background": "#ebffe5", "on-primary-fixed-variant": "#005323", "secondary-fixed": "#ffdbca", "primary-fixed": "#95f8a7", "secondary-fixed-dim": "#ffb690", "inverse-surface": "#213521", "on-primary-container": "#d3ffd5", "outline-variant": "#becabc", "surface-container": "#dcf5d6", "tertiary": "#006529", "surface-bright": "#ebffe5", "on-secondary-container": "#5c2400", "inverse-primary": "#79db8d", "primary-container": "#15803d", "surface-variant": "#d0e9cb", "secondary": "#9d4300", "on-tertiary-fixed-variant": "#005320", "surface-tint": "#006d30", "error-container": "#ffdad6", "error": "#ba1a1a", "on-background": "#0c200d", "surface-container-highest": "#d0e9cb", "on-primary-fixed": "#00210a", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#783200", "primary-fixed-dim": "#79db8d", "on-surface": "#0c200d", "on-error": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "margin-mobile": "1rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#ebffe5;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-36 px-gutter-mobile flex flex-col justify-between py-space-sm"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Verde Market Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbgTShY3KZ_JSpjSJqJO5k_wR1v9e_6zhQWmZSP2Q2Faislcc9eHl4K6kFYTeCTcUXb0iQTWzLutqjE8UPOFDl3wJx8gTgzmWbwITJJLExsG8MYXkdpOAFIvcPeHdC2xDdeHmOeCyoa7HDTchtkMswXQnEcXYQjAJ41MBkX0AFPFGuwLU7IdK8wsyUdHswLpTib-1b_InnY3umKVG_h75LLeiMe5KQVc-2EpkZr_ubntI--8FWtX261Q"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">Verde Market</span></div><button class="flex items-center gap-space-xs text-left bg-surface-container/60 hover:bg-surface-container px-space-sm py-1 rounded-full transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Deliver to</span><span class="font-label-md text-label-md text-on-surface truncate max-w-[130px]">742 Evergreen Terr • 15m</span></div><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></button><button class="relative min-w-[44px] min-h-[44px] flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKHbQ7vpy-pq6gyxZGcpQqqwRe1ubIbDR8_vxoNL6pJMYOO8JMhUTT2ky_7xLZCIdBJZLyTPo43fjtcJf72noqHHAukrOSGRZPvfm0MxwCyfTl5UCwCY8bUPcbcvxkpla30cra5VOxH0thIkf2NRz7xGyeORnvZcWk3JF39bBa63opcyeMcPJBVb6WdlWfwOL5SNON1OM4vabX9nIecEsR2UYiGASYnoewGxvEvqOaSWvvLdkZHwrTmg"/></button></div><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant pointer-events-none text-[20px]">search</span><input class="w-full h-11 pl-11 pr-space-md rounded-full bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:outline-none focus:ring-1.5 focus:ring-primary shadow-[0_2px_8px_-2px_rgba(26,46,26,0.05)]" placeholder="Search fresh organic groceries, produce..." type="text"/><span class="sr-only">Browse Categories</span></div></div></header><main class="flex flex-col relative w-full pt-36 pb-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Sub-Header Status Strip & Farm Story Snippet -->
+<div class="px-margin-mobile pt-space-xs pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-extrabold">Morning Harvest In</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• 42 items picked today</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-high px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-[14px]">eco</span>
+<span class="font-label-sm text-label-sm text-on-surface">100% Verified</span>
+</div>
+</div>
+<!-- Dietary Filter & Sort Pill Bar -->
+<div class="px-margin-mobile flex items-center gap-space-sm pb-space-sm">
+<button class="flex items-center gap-1.5 bg-surface-container-highest text-on-surface px-3 py-2 rounded-full shadow-sm active:scale-95 transition-transform flex-shrink-0" id="dietaryFilterBtn">
+<span class="material-symbols-outlined text-[18px] text-primary">tune</span>
+<span class="font-label-md text-label-md">Dietary</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+</button>
+<!-- Quick Filter Chips Rail -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5">
+<button class="filter-chip active flex items-center gap-1 bg-primary text-on-primary px-3 py-1.5 rounded-full font-label-md text-label-md shadow-sm whitespace-nowrap active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[14px]">check</span>
+        In Stock
+      </button>
+<button class="filter-chip flex items-center gap-1 bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md shadow-sm whitespace-nowrap active:scale-95 transition-all">
+<span>🌱 Local Farms</span>
+</button>
+<button class="filter-chip flex items-center gap-1 bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md shadow-sm whitespace-nowrap active:scale-95 transition-all">
+<span>Under $5</span>
+</button>
+<button class="filter-chip flex items-center gap-1 bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md shadow-sm whitespace-nowrap active:scale-95 transition-all">
+<span>Non-GMO</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Sub-Category Switcher Tabs -->
+<div class="w-full px-margin-mobile pb-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<button class="subcat-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm font-bold transition-all">
+        All Produce
+      </button>
+<button class="subcat-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all hover:bg-surface-container-low">
+        Fruits
+      </button>
+<button class="subcat-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all hover:bg-surface-container-low">
+        Vegetables
+      </button>
+<button class="subcat-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all hover:bg-surface-container-low">
+        Fresh Herbs
+      </button>
+<button class="subcat-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all hover:bg-surface-container-low">
+        Pre-cut &amp; Salads
+      </button>
+</div>
+</div>
+<!-- Sort & Counter Bar -->
+<div class="px-margin-mobile pb-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing 24 organic picks</span>
+<div class="relative">
+<button class="flex items-center gap-1 bg-surface-container text-on-surface px-2.5 py-1 rounded-full font-label-sm text-label-sm active:scale-95 transition-transform" id="sortDropdownBtn">
+<span class="text-on-surface-variant">Sort:</span>
+<span class="font-bold text-primary" id="currentSortLabel">Freshness Score</span>
+<span class="material-symbols-outlined text-[16px] text-primary">expand_more</span>
+</button>
+<!-- Hidden Dropdown Menu -->
+<div class="hidden absolute right-0 top-8 z-30 w-44 bg-surface-container-lowest rounded-xl shadow-xl py-1 flex flex-col" id="sortMenu">
+<button class="sort-option text-left px-3 py-2 font-label-sm text-label-sm text-on-surface hover:bg-surface-container-low transition-colors" data-sort="Freshness Score">Freshness Score ⭐</button>
+<button class="sort-option text-left px-3 py-2 font-label-sm text-label-sm text-on-surface hover:bg-surface-container-low transition-colors" data-sort="Best Match">Best Match</button>
+<button class="sort-option text-left px-3 py-2 font-label-sm text-label-sm text-on-surface hover:bg-surface-container-low transition-colors" data-sort="Price: Low to High">Price: Low to High</button>
+<button class="sort-option text-left px-3 py-2 font-label-sm text-label-sm text-on-surface hover:bg-surface-container-low transition-colors" data-sort="Price: High to Low">Price: High to Low</button>
+</div>
+</div>
+</div>
+<!-- Product Catalog Grid (2 columns on mobile) -->
+<div class="px-margin-mobile grid grid-cols-2 gap-gutter-mobile">
+<!-- Card 1: Organic Strawberries (In Cart: 2) -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-sm shadow-sm relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Vibrant studio shot of freshly picked bright red organic strawberries inside a clear open clamshell, sprinkled with morning water droplets, clean natural daylight, editorial food styling, emerald leaves background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3IXknzqZnPT4PRZXg_XaqjsoFQ5xx7LUWLm-Xhq7hoQI-mVmRlEspJYgsCjydhTdWtiGTA1Dxj21TRucZ3o4DqdPnVMlXf4YAxBK31AgnkzGgNXbYgxocwSXBf71gSjz1hRISzxi7KHieucK6k1AWoHaRO5grGVUgj6cO7NdZ7Gduj2WbWArlLHuZR8Wa3qhBey1vguhPs_IXiTprSR0cc6wMbjb-VrV0F_Tu6Kv3HSqAvi7s2SgicQ"/>
+<!-- Badges -->
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shadow-sm">Organic</span>
+</div>
+<!-- Freshness Indicator Ring -->
+<div class="absolute bottom-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-sm rounded-full px-1.5 py-0.5 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-primary text-[12px]">verified</span>
+<span class="font-label-sm text-[9px] text-primary font-bold">99 Fresh</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">California Farms</span>
+<h2 class="font-headline-sm text-[15px] leading-tight text-on-surface font-bold line-clamp-2 mt-0.5">Organic Strawberries (1 lb)</h2>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold">$4.49</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">$0.28/oz</span>
+</div>
+<!-- Quantity Stepper Active State -->
+<div class="mt-space-xs flex items-center justify-between bg-primary rounded-full px-1 py-0.5 text-on-primary shadow-sm">
+<button class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-on-primary/10 active:scale-90 transition-all font-bold" onclick="updateQty(this, -1)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-md text-label-md font-bold px-1 select-none qty-display">2</span>
+<button class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-on-primary/10 active:scale-90 transition-all font-bold" onclick="updateQty(this, 1)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Heirloom Vine Tomatoes -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-sm shadow-sm relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Rustic cluster of multi-colored heirloom vine tomatoes with dark green stems attached, glistening under warm soft lighting, vibrant reds, greens, and golden yellows, culinary photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsPoxPZIOfzuP2wbQOMmqQW4AgQIzDIZRnmCHaXEFd0LEPimDsLsxSYrRm7dczyPtZ6Qu7gcaPWodUg_N_-K1_cEixwbLFNmEyWW4ts4KzpB7Ttly0y_O1YQ0BsIZU_M62MeQ42falMkMR96-C5nk78gClfLk8R6QslJ92LmZELeLZwwqxGszThbwdvi4vY7nty8eZEyUR-OJBYodjlGaSNvSIQEiwQYsgIXpnwAfwNC8JGAEsoggjxg"/>
+<!-- Badges -->
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1">
+<span class="bg-secondary-container text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shadow-sm">Local</span>
+</div>
+<div class="absolute bottom-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-sm rounded-full px-1.5 py-0.5 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-primary text-[12px]">bolt</span>
+<span class="font-label-sm text-[9px] text-primary font-bold">Hydro</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">Local Hydroponic</span>
+<h2 class="font-headline-sm text-[15px] leading-tight text-on-surface font-bold line-clamp-2 mt-0.5">Heirloom Vine Tomatoes (1 lb)</h2>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold">$3.99</span>
+</div>
+<!-- Add Button Idle State -->
+<div class="mt-space-xs">
+<button class="w-full h-8 flex items-center justify-center gap-1 bg-surface-container-low text-primary rounded-full font-label-md text-label-md font-bold shadow-sm active:scale-95 transition-all hover:bg-primary hover:text-on-primary" onclick="transformToAdd(this)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>ADD</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Organic Hass Avocado -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-sm shadow-sm relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Mesh net bag filled with four rich dark green textured Hass avocados, one cut in half showing creamy lime-green flesh and perfect seed, warm bright daylight, clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbnbWIzxvYUlugBYONGpV7-7HDfClCtKzYh9OVeOiY0NK0IBq85jEGfxPP3YTFWwHJSi-US0ORMw8WPkwt_iMKIW4Tucm1ZdKI6iUhxCVRoNrPJTMEA0cDGN_b_wePC6RyT8K1DbKM1TWcXYMeQXQ_OhA2-QiVQUlMIwX-s3Q2ZDVXF5xKd3tE7s5CFxIITXoCXMay_4FsBkKTuKbxViuVlts-FBhNpPqTQ2BSOJPLfnWYSEbf-QdKHA"/>
+<!-- Badges -->
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shadow-sm">Organic</span>
+<span class="bg-secondary text-on-secondary font-label-sm text-[9px] px-1.5 py-0.5 rounded-full font-bold shadow-sm">Fair-Trade</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">Mexican Fair-Trade</span>
+<h2 class="font-headline-sm text-[15px] leading-tight text-on-surface font-bold line-clamp-2 mt-0.5">Organic Hass Avocado (Bag of 4)</h2>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold">$4.89</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">$1.22 ea</span>
+</div>
+<!-- Add Button Idle State -->
+<div class="mt-space-xs">
+<button class="w-full h-8 flex items-center justify-center gap-1 bg-surface-container-low text-primary rounded-full font-label-md text-label-md font-bold shadow-sm active:scale-95 transition-all hover:bg-primary hover:text-on-primary" onclick="transformToAdd(this)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>ADD</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 4: Tuscan Lacinato Kale (In Cart: 1) -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-sm shadow-sm relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Crisp upright bunch of dark deep blue-green Tuscan Lacinato dinosaur kale tied with an unbleached twine string, crisp texture with water mist, studio food shot on soft off-white surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Co0MO9QvGkwjoggE4wEEm2KdHDcjnMgIX3MYEr1d7ioeW8rp0TW4TCXz7_ryyG4vv7Er5mhlRTwUg1HTwYcMiW2BuBZhFbMJRLVz77QjaLoZ4o9qUFr_JCLSW1R3vAL_vxcMLbJkmLknlYIw78XPNIuAJtaWGKxBU7rZKDtQT_2lobqwO6elrG5Fd8B2d8APp1ynQx-G8Mn3-FRFEQFzl98Aq3Apxk2lb8MMjahHSiw99OuL_aLB-w"/>
+<!-- Badges -->
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shadow-sm">Organic</span>
+</div>
+<div class="absolute bottom-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-sm rounded-full px-1.5 py-0.5 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-primary text-[12px]">verified</span>
+<span class="font-label-sm text-[9px] text-primary font-bold">Top Pick</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">Certified Organic</span>
+<h2 class="font-headline-sm text-[15px] leading-tight text-on-surface font-bold line-clamp-2 mt-0.5">Tuscan Lacinato Kale (Bunch)</h2>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold">$1.99</span>
+</div>
+<!-- Quantity Stepper Active State -->
+<div class="mt-space-xs flex items-center justify-between bg-primary rounded-full px-1 py-0.5 text-on-primary shadow-sm">
+<button class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-on-primary/10 active:scale-90 transition-all font-bold" onclick="updateQty(this, -1)">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-label-md text-label-md font-bold px-1 select-none qty-display">1</span>
+<button class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-on-primary/10 active:scale-90 transition-all font-bold" onclick="updateQty(this, 1)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 5: Blueberries Organic (Sale 15%) -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-sm shadow-sm relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Plump dewy organic blueberries tumbling gently out of a biodegradable carton, deep indigo color with silvery bloom coating, delicate focus, macro organic food photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCctgFw6t6u6Or4RYPT2hGxGwp-QZ-3tBLJbG4-pguuiq6R5asbBKjikYdWNiIfwrLsGziVEjmqbuRqyCkrt8sM7wb-fH6ewzlbyVV04Lk3XoBqmlBsQV7CxQJJC-lfQnCTHUvwkIjCLlWR_U3G9rBMUTF55Ashfss82qajqZL27aVpKe3qxos777jAGHqQuH9T9KucXUH-6XidHEwZiveGK5KcwjwjnetO-XXMmRr2onRzkCuVRWPnyQ"/>
+<!-- Badges -->
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shadow-sm">Organic</span>
+<span class="bg-secondary-container text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shadow-sm">Save 15%</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">Organic Meadow</span>
+<h2 class="font-headline-sm text-[15px] leading-tight text-on-surface font-bold line-clamp-2 mt-0.5">Blueberries Organic (6 oz)</h2>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold">$3.79</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through text-[11px]">$4.49</span>
+</div>
+<!-- Add Button Idle State -->
+<div class="mt-space-xs">
+<button class="w-full h-8 flex items-center justify-center gap-1 bg-surface-container-low text-primary rounded-full font-label-md text-label-md font-bold shadow-sm active:scale-95 transition-all hover:bg-primary hover:text-on-primary" onclick="transformToAdd(this)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>ADD</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 6: Meyer Lemons -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-sm shadow-sm relative group">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Bright golden fragrant Meyer lemons with smooth skin in a sustainable net pouch, citrus orchard sunlit ambiance, one cut lemon revealing juicy vibrant center, top tier grocery styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxXIBQnssYmoYwJrNtfYjPosrBU6LK9_ndkJUu4hWTR5pXhKXTjBS5F6CLbAbFv_EIVRRK0s8Wi0KUZzBThb812EGPmU-SmUe-NnX1WwfrgcGaF7xc2TpxuqzZvyfUZdOx_oLyjWPRivk-ZjLoGSa_ujDO7Rrq7WWrup7P9tJ7R51UCIl4ijirEQ_hF9nLpivcuhUQljxh5ZeN9HMsx6jfR3POSlMMlKt8XuvM0zoD-0h02f9qgGmopA"/>
+<!-- Badges -->
+<div class="absolute top-1.5 left-1.5 flex flex-col gap-1">
+<span class="bg-secondary-container text-on-secondary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shadow-sm">Local</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs flex-grow justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate block">Sun Valley Orchards</span>
+<h2 class="font-headline-sm text-[15px] leading-tight text-on-surface font-bold line-clamp-2 mt-0.5">Meyer Lemons (1 lb bag)</h2>
+</div>
+<div class="mt-space-xs">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold">$2.99</span>
+</div>
+<!-- Add Button Idle State -->
+<div class="mt-space-xs">
+<button class="w-full h-8 flex items-center justify-center gap-1 bg-surface-container-low text-primary rounded-full font-label-md text-label-md font-bold shadow-sm active:scale-95 transition-all hover:bg-primary hover:text-on-primary" onclick="transformToAdd(this)">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>ADD</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Farm Partner Spotlight Bento Card (Moments of Delight) -->
+<div class="px-margin-mobile pt-space-lg pb-space-sm">
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">agriculture</span>
+<span class="font-label-md text-label-md text-primary font-extrabold uppercase tracking-wide">Farm of the Week</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">14 miles away</span>
+</div>
+<div class="flex gap-space-sm items-center">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Warm portrait of an eco-conscious organic female farmer holding a wooden crate overflowing with freshly pulled crisp greens and carrots in morning sunlight, genuine smiling face, lush greenhouse background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8K3wXjWIfmZVc7Al3ceTa8EMBCOqg9TWjGh1kZB74uCvMMbo2j7A8yHqQENomo_Sws0woPSb1fsrFymSjHQzGiosGCbWiEySRch7rLXYDJkDcaP8euNqiJRHhREwnMh_M-j96LHTxf3KhyPMZGBdjvIN_DKwJNdw8mbs-mX15jqtTu_H--pI6nw8qFs-1_bQhlcd6iQhNfqd5LEra0AfJIP8z0mcWm8SDG0FqpCDEgCIKGxOGh962Jw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">Ojai Heritage Fields</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+            Supplying regenerative greens, wild cilantro, and sweet Meyer lemons delivered within 6 hours of morning plucking.
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center -space-x-1">
+<span class="w-6 h-6 rounded-full bg-surface-tint text-on-primary flex items-center justify-center text-[10px] font-bold">1</span>
+<span class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary flex items-center justify-center text-[10px] font-bold">2</span>
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[10px] font-bold">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant pl-2">9 Harvests Certified</span>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-0.5 hover:underline">
+<span>Meet grower</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Floating Dietary Filter Modal / Sheet (Simulated Interaction) -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm flex items-end justify-center" id="dietaryModal">
+<div class="bg-surface-container-lowest w-full max-w-md rounded-t-2xl p-space-md flex flex-col gap-space-md shadow-2xl animate-in slide-in-from-bottom duration-200">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">eco</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Dietary &amp; Sourcing</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" id="closeModalBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-space-sm">
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">100% Certified Organic</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">USDA approved non-synthetic soil</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">cruelty_free</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">100% Plant-Based &amp; Vegan</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero animal by-products</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">science_off</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Non-GMO Verified</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Lab-tested seed integrity</span>
+</div>
+</div>
+<input checked="" class="w-5 h-5 rounded accent-primary cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">local_shipping</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Local Farms (&lt; 50 miles)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Harvested inside regional belt</span>
+</div>
+</div>
+<input class="w-5 h-5 rounded accent-primary cursor-pointer" type="checkbox"/>
+</label>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 py-3 rounded-full bg-surface-container text-on-surface font-label-md text-label-md font-bold" id="resetModalBtn">
+          Reset Filters
+        </button>
+<button class="flex-1 py-3 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold shadow-md" id="applyModalBtn">
+          Apply (3 Active)
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript for micro-interactions -->
+<script>
+    // Dietary modal handlers
+    const filterBtn = document.getElementById('dietaryFilterBtn');
+    const modal = document.getElementById('dietaryModal');
+    const closeBtn = document.getElementById('closeModalBtn');
+    const applyBtn = document.getElementById('applyModalBtn');
+    const resetBtn = document.getElementById('resetModalBtn');
+
+    if (filterBtn && modal) {
+      filterBtn.addEventListener('click', () => modal.classList.remove('hidden'));
+      closeBtn?.addEventListener('click', () => modal.classList.add('hidden'));
+      applyBtn?.addEventListener('click', () => modal.classList.add('hidden'));
+      resetBtn?.addEventListener('click', () => modal.classList.add('hidden'));
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.add('hidden');
+      });
+    }
+
+    // Sort Dropdown Toggle
+    const sortBtn = document.getElementById('sortDropdownBtn');
+    const sortMenu = document.getElementById('sortMenu');
+    const sortLabel = document.getElementById('currentSortLabel');
+
+    if (sortBtn && sortMenu) {
+      sortBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        sortMenu.classList.toggle('hidden');
+      });
+      document.querySelectorAll('.sort-option').forEach(item => {
+        item.addEventListener('click', (e) => {
+          const val = item.getAttribute('data-sort');
+          if (sortLabel) sortLabel.textContent = val;
+          sortMenu.classList.add('hidden');
+        });
+      });
+      document.addEventListener('click', () => {
+        sortMenu.classList.add('hidden');
+      });
+    }
+
+    // Category Tabs Switching
+    document.querySelectorAll('.subcat-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.subcat-tab').forEach(t => {
+          t.className = 'subcat-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm transition-all hover:bg-surface-container-low';
+        });
+        tab.className = 'subcat-tab flex-shrink-0 px-4 py-2 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm font-bold transition-all';
+      });
+    });
+
+    // Filter Chips Toggle
+    document.querySelectorAll('.filter-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const isActive = chip.classList.contains('bg-primary');
+        if (isActive) {
+          chip.className = 'filter-chip flex items-center gap-1 bg-surface-container-lowest text-on-surface px-3 py-1.5 rounded-full font-label-md text-label-md shadow-sm whitespace-nowrap active:scale-95 transition-all';
+        } else {
+          chip.className = 'filter-chip flex items-center gap-1 bg-primary text-on-primary px-3 py-1.5 rounded-full font-label-md text-label-md shadow-sm whitespace-nowrap active:scale-95 transition-all';
+        }
+      });
+    });
+
+    // Transform [+ ADD] button to dynamic stepper
+    window.transformToAdd = function(btn) {
+      const container = btn.parentElement;
+      container.innerHTML = `
+        <div class="flex items-center justify-between bg-primary rounded-full px-1 py-0.5 text-on-primary shadow-sm animate-scale-up">
+          <button class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-on-primary/10 active:scale-90 transition-all font-bold" onclick="updateQty(this, -1)">
+            <span class="material-symbols-outlined text-[16px]">remove</span>
+          </button>
+          <span class="font-label-md text-label-md font-bold px-1 select-none qty-display">1</span>
+          <button class="w-7 h-7 flex items-center justify-center rounded-full hover:bg-on-primary/10 active:scale-90 transition-all font-bold" onclick="updateQty(this, 1)">
+            <span class="material-symbols-outlined text-[16px]">add</span>
+          </button>
+        </div>
+      `;
+    };
+
+    // Stepper plus/minus counter
+    window.updateQty = function(btn, delta) {
+      const parent = btn.parentElement;
+      const countEl = parent.querySelector('.qty-display');
+      let current = parseInt(countEl.textContent, 10);
+      current += delta;
+      if (current <= 0) {
+        // revert to ADD button
+        const rootContainer = parent.parentElement;
+        rootContainer.innerHTML = `
+          <button class="w-full h-8 flex items-center justify-center gap-1 bg-surface-container-low text-primary rounded-full font-label-md text-label-md font-bold shadow-sm active:scale-95 transition-all hover:bg-primary hover:text-on-primary" onclick="transformToAdd(this)">
+            <span class="material-symbols-outlined text-[16px]">add</span>
+            <span>ADD</span>
+          </button>
+        `;
+      } else {
+        countEl.textContent = current;
+      }
+    };
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(26,46,26,0.08)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home-shop" href="#"><span class="material-symbols-outlined text-[24px]">storefront</span><span class="font-label-sm text-label-sm">Shop</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs py-1 transition-colors text-primary font-bold" data-path="browse-categories" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-sm text-label-sm">Categories</span></a><a class="relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="cart" href="#"><div class="relative"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1.5 -right-2 bg-secondary-container text-on-secondary font-label-sm text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></div><span class="font-label-sm text-label-sm">Cart</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="orders-live-tracking" href="#"><span class="material-symbols-outlined text-[24px]">local_shipping</span><span class="font-label-sm text-label-sm">Orders</span></a></div></nav></body></html>

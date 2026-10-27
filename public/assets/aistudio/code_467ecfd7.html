@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>Verde Market</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary-fixed-dim": "#62df7d", "on-tertiary-fixed": "#002109", "outline": "#6f7a6e", "on-primary": "#ffffff", "surface": "#ebffe5", "inverse-on-surface": "#dff8d9", "tertiary-fixed": "#7ffc97", "primary": "#00652c", "surface-container-low": "#e1fbdc", "on-tertiary-container": "#d4ffd4", "on-secondary": "#ffffff", "on-secondary-fixed": "#341100", "on-error-container": "#93000a", "surface-dim": "#c8e1c3", "tertiary-container": "#008137", "surface-container-high": "#d6efd0", "surface-container-lowest": "#ffffff", "on-surface-variant": "#3f493f", "secondary-container": "#fd761a", "background": "#ebffe5", "on-primary-fixed-variant": "#005323", "secondary-fixed": "#ffdbca", "primary-fixed": "#95f8a7", "secondary-fixed-dim": "#ffb690", "inverse-surface": "#213521", "on-primary-container": "#d3ffd5", "outline-variant": "#becabc", "surface-container": "#dcf5d6", "tertiary": "#006529", "surface-bright": "#ebffe5", "on-secondary-container": "#5c2400", "inverse-primary": "#79db8d", "primary-container": "#15803d", "surface-variant": "#d0e9cb", "secondary": "#9d4300", "on-tertiary-fixed-variant": "#005320", "surface-tint": "#006d30", "error-container": "#ffdad6", "error": "#ba1a1a", "on-background": "#0c200d", "surface-container-highest": "#d0e9cb", "on-primary-fixed": "#00210a", "on-tertiary": "#ffffff", "on-secondary-fixed-variant": "#783200", "primary-fixed-dim": "#79db8d", "on-surface": "#0c200d", "on-error": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-xl": "2rem", "space-xs": "0.25rem", "margin": "1.5rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter-mobile": "0.75rem", "space-md": "1rem", "margin-mobile": "1rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-lg-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#ebffe5;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-36 px-gutter-mobile flex flex-col justify-between py-space-sm"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="Verde Market Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbgTShY3KZ_JSpjSJqJO5k_wR1v9e_6zhQWmZSP2Q2Faislcc9eHl4K6kFYTeCTcUXb0iQTWzLutqjE8UPOFDl3wJx8gTgzmWbwITJJLExsG8MYXkdpOAFIvcPeHdC2xDdeHmOeCyoa7HDTchtkMswXQnEcXYQjAJ41MBkX0AFPFGuwLU7IdK8wsyUdHswLpTib-1b_InnY3umKVG_h75LLeiMe5KQVc-2EpkZr_ubntI--8FWtX261Q"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">Verde Market</span></div><button class="flex items-center gap-space-xs text-left bg-surface-container/60 hover:bg-surface-container px-space-sm py-1 rounded-full transition-colors"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Deliver to</span><span class="font-label-md text-label-md text-on-surface truncate max-w-[130px]">742 Evergreen Terr • 15m</span></div><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></button><button class="relative min-w-[44px] min-h-[44px] flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKHbQ7vpy-pq6gyxZGcpQqqwRe1ubIbDR8_vxoNL6pJMYOO8JMhUTT2ky_7xLZCIdBJZLyTPo43fjtcJf72noqHHAukrOSGRZPvfm0MxwCyfTl5UCwCY8bUPcbcvxkpla30cra5VOxH0thIkf2NRz7xGyeORnvZcWk3JF39bBa63opcyeMcPJBVb6WdlWfwOL5SNON1OM4vabX9nIecEsR2UYiGASYnoewGxvEvqOaSWvvLdkZHwrTmg"/></button></div><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant pointer-events-none text-[20px]">search</span><input class="w-full h-11 pl-11 pr-space-md rounded-full bg-surface-container-lowest text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant focus:outline-none focus:ring-1.5 focus:ring-primary shadow-[0_2px_8px_-2px_rgba(26,46,26,0.05)]" placeholder="Search fresh organic groceries, produce..." type="text"/><span class="sr-only">Home Shop</span></div></div></header><main class="flex flex-col relative w-full pt-36 pb-28 bg-surface"><div class="flex flex-col w-full px-gutter-mobile space-y-space-md">
+<!-- Express Speed Indicator Pill -->
+<div class="flex items-center justify-between bg-surface-container px-space-md py-space-sm rounded-full shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary-container"></span>
+</span>
+<span class="font-label-md text-label-md text-on-surface truncate">
+        ⚡ Arriving in <span class="font-bold text-primary">15-20 mins</span> from Downtown Hub
+      </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary-fixed px-space-xs py-0.5 rounded-full whitespace-nowrap">
+      PRIORITY
+    </span>
+</div>
+<!-- Promotional Hero Banner -->
+<div class="relative overflow-hidden rounded-xl bg-primary text-on-primary shadow-md p-space-md flex flex-col justify-between min-h-[160px]">
+<div class="absolute -right-6 -bottom-8 w-44 h-44 rounded-full bg-tertiary-container/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-start max-w-[70%]">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed bg-secondary/80 px-2 py-0.5 rounded-full mb-space-xs font-bold">
+        Limited Time Event
+      </span>
+<h2 class="font-headline-md text-headline-md font-extrabold tracking-tight leading-tight text-on-primary mb-1">
+        Spring Harvest Festival
+      </h2>
+<p class="font-body-sm text-body-sm text-on-primary-container leading-snug">
+        Up to 35% off fresh organic hand-picked berries &amp; garden greens.
+      </p>
+</div>
+<div class="relative z-10 flex items-center justify-between mt-space-md">
+<button class="bg-secondary-container text-on-secondary px-space-md py-2 rounded-full font-label-lg text-label-lg flex items-center gap-1 shadow-sm active:scale-95 transition-transform">
+<span>Shop Deals</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<div class="flex items-center gap-1 bg-primary-container/60 px-space-xs py-1 rounded-full text-on-primary-container">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+<span class="font-label-sm text-label-sm font-semibold">100% Certified</span>
+</div>
+</div>
+</div>
+<!-- Quick Category Filter Rail -->
+<div class="flex flex-col space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Aisles &amp; Fresh Finds</span>
+<button class="font-label-sm text-label-sm text-primary font-bold">View Catalog</button>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto py-1 -mx-gutter-mobile px-gutter-mobile scrollbar-none">
+<button class="category-pill active flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-primary text-on-primary shadow-sm font-label-md text-label-md shrink-0 transition-transform active:scale-95">
+<span>All</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md shrink-0 transition-transform active:scale-95">
+<span>🥑</span>
+<span>Fresh Produce</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md shrink-0 transition-transform active:scale-95">
+<span>🥛</span>
+<span>Farm Dairy</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md shrink-0 transition-transform active:scale-95">
+<span>🥖</span>
+<span>Artisan Bakery</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md shrink-0 transition-transform active:scale-95">
+<span>🥩</span>
+<span>Organic Meats</span>
+</button>
+<button class="category-pill flex items-center gap-1.5 px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md shrink-0 transition-transform active:scale-95">
+<span>🧃</span>
+<span>Cold Pressed</span>
+</button>
+</div>
+</div>
+<!-- Section: Today's Farm Deals (Horizontal Carousel) -->
+<div class="flex flex-col space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_fire_department</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold tracking-tight">Today's Farm Deals</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold bg-secondary-fixed px-2 py-0.5 rounded-full">
+        Fresh Markdown
+      </span>
+</div>
+<div class="flex gap-space-sm overflow-x-auto py-1 -mx-gutter-mobile px-gutter-mobile scrollbar-none">
+<!-- Deal Card 1: Avocados -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-sm shadow-sm shrink-0 w-44 justify-between">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Trio of fresh ripe dark-green textured organic Hass avocados arranged artfully in rustic natural sunlight with clean light green background, premium commercial grocery styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTOVRuRSsJWFMI0q7CmPRCEPs-4fPVrRJsBP_hMCBhkCY6iGMMLQpDzhfT0H2-h7q3gDxKk-o7NhHnIL71a_LxtavJIvhvd8tsM0L-k87eRBT4DVQpLe7-d9hTwBSF4ADZBx3TcNOyGRCk-qDOefmKlZ3rOBAiLL2Yonm8lq8M0ZSQMJKkSXl0mtEG00WHEMzrK321_fEg1a0kcshwjmxJFozLQTFRLgwxeQkql3U0D-riKmi_aUc0lw"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary-container text-on-secondary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold shadow-xs">
+            -25%
+          </span>
+<span class="absolute bottom-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-xs text-on-surface font-label-sm text-label-sm px-1 rounded flex items-center gap-0.5 font-bold">
+<span class="material-symbols-outlined text-[12px] text-secondary">star</span>4.8
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Organic Harvest</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Organic Hass Avocados</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 count pack</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-black leading-none">$3.49</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through leading-none mt-0.5">$4.99</span>
+</div>
+<div class="cart-toggle" data-id="deal-1" data-price="3.49">
+<button class="add-btn flex items-center justify-center w-8 h-8 rounded-full bg-primary text-on-primary shadow-xs active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="stepper-box hidden flex items-center bg-primary rounded-full px-1 py-0.5 text-on-primary">
+<button class="minus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="count-txt font-label-md text-label-md px-1.5 font-bold">1</span>
+<button class="plus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Deal Card 2: Gala Apples -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-sm shadow-sm shrink-0 w-44 justify-between">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Crisp glistening red organic Gala apples with green stem leaves fresh morning dew drops under soft studio daylight, clean produce photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANIXFq_F7TNUirXGx88kz20H2rGjPAII6Vlj4KXEeCb8XkgZUbfgwOcKYk7bA7n0yEbIsyiuyzvTYbfdF9tGBc2JY_62da7psI3BsVPMcOjYdQUuLTAMWMmyLeh-7vP9UdSFtsvF8xnsT2sz1bgPEHV9oj-itaYFfbmdC8WVqo1NVF41kfgQ0Ft9z-i468oFx_at3hHCTul1gov14un2M7QApDmy-MKoPwCuYmFsBNnGDUiG2QFai00w"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary-container text-on-secondary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold shadow-xs">
+            -20%
+          </span>
+<span class="absolute bottom-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-xs text-on-surface font-label-sm text-label-sm px-1 rounded flex items-center gap-0.5 font-bold">
+<span class="material-symbols-outlined text-[12px] text-secondary">star</span>4.9
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Orchard Direct</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Crisp Gala Apples</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 lb bag (~3 apples)</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-black leading-none">$2.19</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through leading-none mt-0.5">$2.89</span>
+</div>
+<div class="cart-toggle" data-id="deal-2" data-price="2.19">
+<button class="add-btn flex items-center justify-center w-8 h-8 rounded-full bg-primary text-on-primary shadow-xs active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="stepper-box hidden flex items-center bg-primary rounded-full px-1 py-0.5 text-on-primary">
+<button class="minus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="count-txt font-label-md text-label-md px-1.5 font-bold">1</span>
+<button class="plus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Deal Card 3: Whole Milk -->
+<div class="flex flex-col bg-surface-container-lowest rounded-xl p-space-sm shadow-sm shrink-0 w-44 justify-between">
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Traditional glass bottle of rich grass-fed farm fresh whole milk against soft emerald kitchen setting with wheat stalks, high end organic market aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB9gAw0aF8BOB4Z_cvh8CkTkP8_xKic9mqNLCU_2k8vHHtOZ2JGDx_bwgOdFkKN0o1-oQn27rADDCipUEmj-8THEBtVbRM3mYpY5dLDCK5bIcHTH--UDY-aBfCAeTNhL2YHtkVT-Toc03B8QRxR43cNvxF1FdrTE7Sh4HxyiqhFJOgzIabv0sCS-iMdttO4GJolVSldsMdloT5RuNUVRHBvj05rlO6YRTjYqbayXnRMg693HEPAW1ZbA"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary-container text-on-secondary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold shadow-xs">
+            -15%
+          </span>
+<span class="absolute bottom-1.5 right-1.5 bg-surface-container-lowest/90 backdrop-blur-xs text-on-surface font-label-sm text-label-sm px-1 rounded flex items-center gap-0.5 font-bold">
+<span class="material-symbols-outlined text-[12px] text-secondary">star</span>4.7
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Pasture Raised</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Grass-Fed Whole Milk</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">0.5 Gallon glass bottle</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-black leading-none">$4.29</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant line-through leading-none mt-0.5">$5.10</span>
+</div>
+<div class="cart-toggle" data-id="deal-3" data-price="4.29">
+<button class="add-btn flex items-center justify-center w-8 h-8 rounded-full bg-primary text-on-primary shadow-xs active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="stepper-box hidden flex items-center bg-primary rounded-full px-1 py-0.5 text-on-primary">
+<button class="minus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="count-txt font-label-md text-label-md px-1.5 font-bold">1</span>
+<button class="plus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Trending Organics (2-Column Grid) -->
+<div class="flex flex-col space-y-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">trending_up</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold tracking-tight">Trending Organics</h3>
+</div>
+<button class="font-label-sm text-label-sm text-primary font-bold">Explore All</button>
+</div>
+<div class="grid grid-cols-2 gap-gutter-mobile">
+<!-- Item 1: Wildflower Raw Honey -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-sm shadow-sm">
+<div>
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Artisanal glass jar of golden amber wildflower raw honey with honeycomb texture wooden dipper warm sunny kitchen aesthetic morning glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ59BdbTSGHmEW1PIRlBM9HJjsd7AMg0cKd1lH2zrBSTt_s8vNDD1e6g1esms2DX4v13aym6V0MSzww-lp5pBIjkbRMeGm_sE47KXUT7XSRNp4UGE27XBe2__UDrIjluYnYb5ToC2nwVkWVbI_HvgqGwppO3ef8jdM9-v4pok9FZVsir11MeY2wE2t2ki3rh9JajFW_0jfYqW1b2IUxtGHeCJHfX6M-mGbovo7oI_kJGmpBtT2xBQcoA"/>
+<span class="absolute top-1.5 left-1.5 bg-primary text-on-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold">
+              Pure Local
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Bee Haven Apiary</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Wildflower Raw Honey</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">12 oz glass jar</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-black">$7.99</span>
+<div class="cart-toggle" data-id="trend-1" data-price="7.99">
+<button class="add-btn flex items-center justify-center w-8 h-8 rounded-full bg-surface-container text-primary font-bold shadow-xs active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="stepper-box hidden flex items-center bg-primary rounded-full px-1 py-0.5 text-on-primary">
+<button class="minus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="count-txt font-label-md text-label-md px-1.5 font-bold">1</span>
+<button class="plus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2: Baby Spinach & Arugula -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-sm shadow-sm">
+<div>
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Vibrant clean box of organic young baby spinach and wild baby arugula leaves crisp vivid emerald greens farm fresh studio light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdgizKcvscvZcDjbvVO13eFrOX70zsWRnuGbEIHZO_wMr8CMN4f4CBHq8eXgBCWG-sWM3jXIJ-PDBixB5-J0huLev6x1MKobNDH2-UzSeAIeO0prHDnDTCAL3lWPvepL7dlstOAnnRPXYirj6gr98ZpUwTfmNRaAePOEZMrVQxGd15IDs8GL2h0eKGo5I8pCGeDqFVDlbnDr96oJ_seFGNsZu2C_Mu_tS-fQXMLHqCE59jdCx0PQHo4w"/>
+<span class="absolute top-1.5 left-1.5 bg-primary text-on-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold">
+              Hydroponic
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Valley Greens</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Spinach &amp; Arugula Mix</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">5 oz pre-washed</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-black">$3.29</span>
+<div class="cart-toggle" data-id="trend-2" data-price="3.29">
+<button class="add-btn flex items-center justify-center w-8 h-8 rounded-full bg-surface-container text-primary font-bold shadow-xs active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="stepper-box hidden flex items-center bg-primary rounded-full px-1 py-0.5 text-on-primary">
+<button class="minus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="count-txt font-label-md text-label-md px-1.5 font-bold">1</span>
+<button class="plus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3: Sourdough Boule -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-sm shadow-sm">
+<div>
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Crusty freshly baked rustic artisan sourdough boule with scored flour pattern resting on linen bakery cloth, warm golden tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-q1DCmGSyGoHUqyl1KiJWXXsPXFKSk-bZep4RFf9MDQE-qLdOragWPscHUcB-0neDA7DmOOi1OOJR4z7agZvEawcaq-A6vmy5kB6Hd_3Bpg8v2_bTdHJtekzNMEKRPB6Dqg8S1SY-riumQNzmLRefbjsGjNRkHrhlNQQMSWZ6VOzmlAMXbhC-AfUF9h6HRQuuLDcYp6fptFsAOv8vg9M1svASnCzd1gZG-AQDOSsk0vWpH9Prg5luHw"/>
+<span class="absolute top-1.5 left-1.5 bg-secondary-container text-on-secondary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold">
+              Baked 5 AM
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Hearth &amp; Grain</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Sourdough Boule</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">24 oz rustic loaf</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-black">$4.50</span>
+<div class="cart-toggle" data-id="trend-3" data-price="4.50">
+<button class="add-btn flex items-center justify-center w-8 h-8 rounded-full bg-surface-container text-primary font-bold shadow-xs active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="stepper-box hidden flex items-center bg-primary rounded-full px-1 py-0.5 text-on-primary">
+<button class="minus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="count-txt font-label-md text-label-md px-1.5 font-bold">1</span>
+<button class="plus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 4: Greek Yogurt -->
+<div class="flex flex-col justify-between bg-surface-container-lowest rounded-xl p-space-sm shadow-sm">
+<div>
+<div class="relative w-full aspect-square bg-surface-container-low rounded-lg overflow-hidden flex items-center justify-center mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Tub of creamy thick plain Greek whole milk yogurt beside fresh mint leaves and wooden spoon in soft natural daylight, minimalist dairy packaging" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlvGlr3gXvVFuLcsXxYILtRkdQfZoUj97FAjJvQQv8dSaPQd6QMLVZaF5iZIDf4NIU0R6PBVw9BVYlx6RxjhxWxTd3GCYZ_M3mLGt8plqqq73J_-M86US-0yBLQswYZN56j2tNyNaK34M8URT2o3UI4FjUbYp64rnOWA_n6sYw0u8D0Ei9WjLm0j2800_C4_i6MTKe8ZAWdNdr0Byb1dXoDDG1Zq2kXVMXqPM1MyHcoEBDjI9shsLOyg"/>
+<span class="absolute top-1.5 left-1.5 bg-primary text-on-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full font-bold">
+              Probiotic
+            </span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Green Pastures</span>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Greek Whole Yogurt</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">32 oz tub</span>
+</div>
+<div class="flex items-center justify-between mt-space-sm pt-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-black">$5.10</span>
+<div class="cart-toggle" data-id="trend-4" data-price="5.10">
+<button class="add-btn flex items-center justify-center w-8 h-8 rounded-full bg-surface-container text-primary font-bold shadow-xs active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="stepper-box hidden flex items-center bg-primary rounded-full px-1 py-0.5 text-on-primary">
+<button class="minus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">remove</span>
+</button>
+<span class="count-txt font-label-md text-label-md px-1.5 font-bold">1</span>
+<button class="plus-btn flex items-center justify-center w-6 h-6 text-on-primary">
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sustainable Farm Story Card -->
+<div class="bg-surface-container rounded-xl p-space-md flex items-center gap-space-sm">
+<div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-on-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">agriculture</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Picked Within 40 Miles</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+        Every item harvested at peak ripeness from verified regenerative family farms.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  // Category Pill Toggle Interaction
+  document.querySelectorAll('.category-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.category-pill').forEach(p => {
+        p.classList.remove('bg-primary', 'text-on-primary');
+        p.classList.add('bg-surface-container-lowest', 'text-on-surface');
+      });
+      pill.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+      pill.classList.add('bg-primary', 'text-on-primary');
+    });
+  });
+
+  // Rapid Add-to-Cart & Pill Stepper Interactive Logic
+  document.querySelectorAll('.cart-toggle').forEach(container => {
+    const addBtn = container.querySelector('.add-btn');
+    const stepperBox = container.querySelector('.stepper-box');
+    const minusBtn = container.querySelector('.minus-btn');
+    const plusBtn = container.querySelector('.plus-btn');
+    const countTxt = container.querySelector('.count-txt');
+
+    let count = 0;
+
+    addBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      count = 1;
+      countTxt.textContent = count;
+      addBtn.classList.add('hidden');
+      stepperBox.classList.remove('hidden');
+    });
+
+    plusBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      count++;
+      countTxt.textContent = count;
+    });
+
+    minusBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      count--;
+      if (count <= 0) {
+        count = 0;
+        stepperBox.classList.add('hidden');
+        addBtn.classList.remove('hidden');
+      } else {
+        countTxt.textContent = count;
+      }
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(26,46,26,0.08)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs py-1 transition-colors text-primary font-bold" data-path="home-shop" href="#"><span class="material-symbols-outlined text-[24px]">storefront</span><span class="font-label-sm text-label-sm">Shop</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="browse-categories" href="#"><span class="material-symbols-outlined text-[24px]">grid_view</span><span class="font-label-sm text-label-sm">Categories</span></a><a class="relative flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="cart" href="#"><div class="relative"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute -top-1.5 -right-2 bg-secondary-container text-on-secondary font-label-sm text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">3</span></div><span class="font-label-sm text-label-sm">Cart</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] px-space-xs py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="orders-live-tracking" href="#"><span class="material-symbols-outlined text-[24px]">local_shipping</span><span class="font-label-sm text-label-sm">Orders</span></a></div></nav></body></html>
