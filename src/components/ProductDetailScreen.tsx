@@ -22,7 +22,7 @@ export const ProductDetailScreen: React.FC<ProductDetailProps> = ({ product }) =
   };
 
   return (
-    <div className="flex flex-col w-full pb-28 pt-1">
+    <div className="flex flex-col w-full pb-20 pt-1">
       {/* Top Back bar */}
       <div className="px-3.5 py-1.5 flex items-center justify-between">
         <button
@@ -56,11 +56,11 @@ export const ProductDetailScreen: React.FC<ProductDetailProps> = ({ product }) =
       {/* Product Image Card */}
       <div className="px-3.5 pt-1 pb-3">
         <div className="relative w-full rounded-3xl overflow-hidden bg-white shadow-sm border border-[#becabc]/30">
-          <div className="relative w-full aspect-[4/3] bg-[#e1fbdc]/30 flex items-center justify-center overflow-hidden">
+          <div className="relative w-full aspect-[4/3] bg-white flex items-center justify-center overflow-hidden">
             <img
               src={product.images[0]}
               alt={product.name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain p-4 pt-10"
             />
             <div className="absolute top-3 left-3 flex flex-wrap gap-1.5">
               <span className="bg-[#00652c] text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-xs">
@@ -146,7 +146,7 @@ export const ProductDetailScreen: React.FC<ProductDetailProps> = ({ product }) =
       </div>
 
       {/* Sticky Bottom Action */}
-      <div className="fixed bottom-16 left-0 right-0 max-w-md mx-auto w-full z-30 bg-[#ebffe5]/95 backdrop-blur-xl px-3.5 py-2.5 shadow-[0_-8px_24px_rgba(26,46,26,0.08)] flex items-center justify-between gap-3 border-t border-[#becabc]/30 box-border">
+      <div className="fixed bottom-[calc(4rem+env(safe-area-inset-bottom))] left-0 right-0 max-w-md mx-auto w-full z-30 bg-[#ebffe5]/95 backdrop-blur-xl px-3.5 py-2.5 shadow-[0_-8px_24px_rgba(26,46,26,0.08)] flex items-center justify-between gap-3 border-t border-[#becabc]/30 box-border">
         {/* Stepper */}
         <div className="flex items-center bg-white rounded-full p-1 shadow-xs border border-[#becabc]/40">
           <button

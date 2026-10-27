@@ -67,7 +67,7 @@ export const ShopScreen: React.FC = () => {
               <p className="text-xs mt-0.5">Try searching for Milo, St. Louis Sugar, Omo, or Milk</p>
             </div>
           ) : (
-            <div className="grid grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-3 gap-2">
               {filteredProducts.map((p) => (
                 <ProductCard key={p.id} product={p} variant="grid" />
               ))}
@@ -92,7 +92,7 @@ export const ShopScreen: React.FC = () => {
                   Popular Daily Picks
                 </span>
               </div>
-              <div className="flex gap-2 overflow-x-auto py-1 -mx-3.5 px-3.5 no-scrollbar">
+              <div className="flex gap-2 overflow-x-auto py-1 -mx-3.5 px-3.5 scroll-px-3.5 snap-x snap-mandatory no-scrollbar">
                 {bestSellers.map((p) => (
                   <ProductCard key={p.id} product={p} variant="carousel" />
                 ))}
@@ -100,7 +100,7 @@ export const ShopScreen: React.FC = () => {
             </div>
           )}
 
-          {/* All Provisions Grid (24 items) */}
+          {/* All Provisions Grid */}
           <div className="flex flex-col space-y-1.5 pt-1">
             <div className="flex items-center justify-between">
               <h3 className="text-[15px] text-[#0c200d] font-black tracking-tight">
@@ -108,7 +108,7 @@ export const ShopScreen: React.FC = () => {
               </h3>
               <span className="text-[11px] text-[#00652c] font-bold">In Stock Today</span>
             </div>
-            <div className="grid grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-3 gap-2">
               {filteredProducts.map((p) => (
                 <ProductCard key={p.id} product={p} variant="grid" />
               ))}

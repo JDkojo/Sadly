@@ -25,7 +25,12 @@ const AppContent: React.FC = () => {
         <Toast />
 
         {/* Main View Area */}
-        <main className="flex flex-col relative w-full bg-[#ebffe5] flex-1 box-border">
+        {/* Bottom padding keeps content clear of the fixed BottomNav (h-16) and the phone's home indicator */}
+        <main
+          className={`flex flex-col relative w-full bg-[#ebffe5] flex-1 box-border ${
+            activeTab === 'staff' ? '' : 'pb-[calc(4rem+env(safe-area-inset-bottom))]'
+          }`}
+        >
           {selectedProduct ? (
             <ProductDetailScreen product={selectedProduct} />
           ) : activeTab === 'shop' ? (

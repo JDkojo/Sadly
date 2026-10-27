@@ -178,7 +178,7 @@ export const CameraQrScanner: React.FC<CameraQrScannerProps> = ({ onScan, onClos
 
         {/* Camera Inactive / Error Display */}
         {!cameraActive && (
-          <div className="p-4 text-center text-white flex flex-col items-center z-10 max-w-xs">
+          <div className="absolute inset-0 p-4 text-center text-white flex flex-col items-center justify-center z-10">
             <span className="material-symbols-outlined text-4xl text-[#ffb690] mb-2 animate-bounce">
               photo_camera
             </span>

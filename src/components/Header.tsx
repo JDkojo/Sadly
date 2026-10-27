@@ -41,16 +41,16 @@ export const Header: React.FC = () => {
               setSelectedProduct(null);
               setActiveTab('shop');
             }}
-            className="flex items-center gap-2 cursor-pointer text-left shrink-0 active:scale-95 transition-transform"
+            className="flex items-center gap-2 cursor-pointer text-left min-w-0 active:scale-95 transition-transform"
           >
-            <div className="w-9 h-9 rounded-xl bg-[#00652c] text-white flex items-center justify-center font-black text-[14px] shadow-sm tracking-tight">
+            <div className="w-9 h-9 shrink-0 rounded-xl bg-[#00652c] text-white flex items-center justify-center font-black text-[14px] shadow-sm tracking-tight">
               SP
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col min-w-0">
               <span className="text-[17px] leading-tight text-[#00652c] font-black tracking-tight font-sans">
                 Sadly Prime
               </span>
-              <span className="text-[10px] text-[#9d4300] font-extrabold tracking-wide">
+              <span className="text-[10px] text-[#9d4300] font-extrabold tracking-wide truncate">
                 MoMo: 0597117861 · Fast Pickup
               </span>
             </div>
@@ -62,10 +62,11 @@ export const Header: React.FC = () => {
             <button
               onClick={() => setIsPosterModalOpen(true)}
               title="View Storefront Entrance QR Poster"
-              className="flex items-center gap-1 bg-[#dcf5d6] hover:bg-[#d0e9cb] text-[#00652c] px-2.5 py-1.5 rounded-full text-[11px] font-bold transition-all active:scale-95 cursor-pointer shadow-2xs border border-[#becabc]/40"
+              aria-label="Entrance QR"
+              className="flex items-center justify-center gap-1 bg-[#dcf5d6] hover:bg-[#d0e9cb] text-[#00652c] h-9 min-w-9 px-2 min-[420px]:px-2.5 rounded-full text-[11px] font-bold transition-all active:scale-95 cursor-pointer shadow-2xs border border-[#becabc]/40"
             >
-              <span className="material-symbols-outlined text-[16px]">qr_code_2</span>
-              <span>Entrance QR</span>
+              <span className="material-symbols-outlined text-[18px]">qr_code_2</span>
+              <span className="hidden min-[420px]:inline">Entrance QR</span>
             </button>
 
             {/* Cart Icon Counter */}

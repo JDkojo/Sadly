@@ -21,13 +21,14 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, variant = 'gr
 
   if (variant === 'carousel') {
     return (
-      <div className="flex flex-col bg-white rounded-2xl p-2.5 shadow-xs shrink-0 w-44 justify-between border border-[#e2e8df] hover:shadow-md transition-shadow">
+      // Two cards fill the frame width: (frame - side padding 1.75rem - gap 0.5rem) / 2
+      <div className="flex flex-col bg-white rounded-2xl p-2.5 shadow-xs shrink-0 snap-start w-[calc((min(100vw,28rem)-2.25rem)/2)] justify-between border border-[#e2e8df] hover:shadow-md transition-shadow">
         <div onClick={handleOpenDetail} className="cursor-pointer group">
-          <div className="relative w-full aspect-square bg-[#e1fbdc]/40 rounded-xl overflow-hidden flex items-center justify-center mb-2">
+          <div className="relative w-full aspect-square bg-white rounded-xl overflow-hidden flex items-center justify-center mb-2">
             <img
               src={product.images[0]}
               alt={product.name}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
             />
             {product.originalPrice && (
               <span className="absolute top-1.5 left-1.5 bg-[#fd761a] text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-xs">
@@ -53,9 +54,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, variant = 'gr
           </div>
         </div>
 
-        <div className="flex items-center justify-between mt-2 pt-1 border-t border-[#f1f5f0]">
-          <div className="flex flex-col">
-            <span className="text-[15px] text-[#0c200d] font-black leading-none">
+        <div className="flex items-center justify-between gap-1 mt-2 pt-1 border-t border-[#f1f5f0]">
+          <div className="flex flex-col min-w-0">
+            <span className="text-[14px] text-[#0c200d] font-black leading-none whitespace-nowrap">
               GH₵ {product.price.toFixed(2)}
             </span>
             {product.originalPrice && (
@@ -78,7 +79,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, variant = 'gr
                 <span className="material-symbols-outlined text-[18px]">add</span>
               </button>
             ) : (
-              <div className="flex items-center bg-[#00652c] rounded-full px-1 py-0.5 text-white shadow-xs">
+              <div className="flex items-center shrink-0 bg-[#00652c] rounded-full px-0.5 py-0.5 text-white shadow-xs">
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
@@ -88,7 +89,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, variant = 'gr
                 >
                   <span className="material-symbols-outlined text-[14px]">remove</span>
                 </button>
-                <span className="text-[12px] px-1.5 font-bold">{qty}</span>
+                <span className="text-[12px] px-1 font-bold">{qty}</span>
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
@@ -106,99 +107,90 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, variant = 'gr
     );
   }
 
-  // Grid variant
+  // Grid variant (compact so three cards fit across a phone screen)
+  const topBadge = product.badges[0];
   return (
-    <div className="flex flex-col bg-white rounded-2xl p-2.5 shadow-xs justify-between border border-[#e2e8df] hover:shadow-md transition-all group">
-      <div onClick={handleOpenDetail} className="cursor-pointer">
-        <div className="relative w-full aspect-square bg-[#e1fbdc]/40 rounded-xl overflow-hidden flex items-center justify-center mb-2">
+    <div className="flex flex-col min-w-0 bg-white rounded-xl p-1.5 shadow-xs justify-between border border-[#e2e8df] hover:shadow-md transition-all group">
+      <div onClick={handleOpenDetail} className="cursor-pointer min-w-0">
+        <div className="relative w-full aspect-square bg-white rounded-lg overflow-hidden flex items-center justify-center mb-1.5">
           <img
             src={product.images[0]}
             alt={product.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+            className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
           />
 
-          {/* Badges */}
-          <div className="absolute top-1.5 left-1.5 flex flex-col gap-1">
-            {product.badges.map((b, idx) => (
-              <span
-                key={idx}
-                className={`text-[9px] font-bold px-2 py-0.5 rounded-full shadow-xs ${
-                  b.variant === 'secondary'
-                    ? 'bg-[#fd761a] text-white'
-                    : b.variant === 'accent'
-                    ? 'bg-[#008137] text-white'
-                    : 'bg-[#00652c] text-white'
-                }`}
-              >
-                {b.text}
-              </span>
-            ))}
-          </div>
+          {topBadge && (
+            <span
+              className={`absolute top-1 left-1 max-w-[calc(100%-0.5rem)] truncate text-[8px] font-bold px-1.5 py-0.5 rounded-full shadow-xs ${
+                topBadge.variant === 'secondary'
+                  ? 'bg-[#fd761a] text-white'
+                  : topBadge.variant === 'accent'
+                  ? 'bg-[#008137] text-white'
+                  : 'bg-[#00652c] text-white'
+              }`}
+            >
+              {topBadge.text}
+            </span>
+          )}
 
-          <span className="absolute bottom-1.5 right-1.5 bg-white/95 backdrop-blur-sm rounded-md px-1.5 py-0.5 flex items-center gap-0.5 text-[10px] font-bold text-[#0c200d] shadow-xs">
-            <span className="material-symbols-outlined text-[#fd761a] text-[12px]" style={{ fontVariationSettings: "'FILL' 1" }}>
+          <span className="absolute bottom-1 right-1 bg-white/95 backdrop-blur-sm rounded-md px-1 py-0.5 flex items-center gap-0.5 text-[9px] font-bold text-[#0c200d] shadow-xs">
+            <span className="material-symbols-outlined text-[#fd761a] text-[10px]" style={{ fontVariationSettings: "'FILL' 1" }}>
               star
             </span>
             {product.rating}
           </span>
         </div>
 
-        <div className="flex flex-col">
-          <span className="text-[10px] text-[#00652c] font-black uppercase tracking-wider block">
-            {product.category}
-          </span>
-          <h3 className="text-[13px] leading-snug text-[#0c200d] font-bold line-clamp-2 mt-0.5 group-hover:text-[#00652c] transition-colors">
-            {product.name}
-          </h3>
-          <span className="text-[11px] text-[#6f7a6e] mt-0.5">{product.unit}</span>
-        </div>
+        <h3 className="text-[11px] leading-tight text-[#0c200d] font-bold line-clamp-2 min-h-[2.5em] group-hover:text-[#00652c] transition-colors">
+          {product.name}
+        </h3>
+        <span className="text-[10px] text-[#6f7a6e] block truncate mt-0.5">{product.unit}</span>
       </div>
 
-      <div className="mt-2 pt-1 border-t border-[#f1f5f0]">
-        <div className="flex items-baseline justify-between">
-          <span className="text-[15px] text-[#00652c] font-black">
+      <div className="mt-1 pt-1 border-t border-[#f1f5f0]">
+        <div className="flex flex-col leading-none">
+          <span className="text-[13px] text-[#00652c] font-black whitespace-nowrap">
             GH₵ {product.price.toFixed(2)}
           </span>
-          {product.originalPrice && (
-            <span className="text-[11px] text-[#6f7a6e] line-through">
-              GH₵ {product.originalPrice.toFixed(2)}
-            </span>
-          )}
+          <span className={`text-[9px] text-[#6f7a6e] line-through mt-0.5 ${product.originalPrice ? '' : 'invisible'}`}>
+            GH₵ {(product.originalPrice ?? product.price).toFixed(2)}
+          </span>
         </div>
 
         {/* Action Button */}
-        <div className="mt-2">
+        <div className="mt-1.5">
           {qty === 0 ? (
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 addToCart(product, 1);
               }}
-              className="w-full h-8 flex items-center justify-center gap-1 bg-[#e1fbdc] hover:bg-[#00652c] hover:text-white text-[#00652c] rounded-full text-[12px] font-bold shadow-xs active:scale-95 transition-all cursor-pointer"
+              className="w-full h-7 flex items-center justify-center gap-0.5 bg-[#e1fbdc] hover:bg-[#00652c] hover:text-white text-[#00652c] rounded-full text-[11px] font-bold shadow-xs active:scale-95 transition-all cursor-pointer"
             >
-              <span className="material-symbols-outlined text-[15px]">add</span>
+              <span className="material-symbols-outlined text-[14px]">add</span>
               <span>ADD</span>
             </button>
           ) : (
-            <div className="flex items-center justify-between bg-[#00652c] rounded-full px-1 py-0.5 text-white shadow-xs">
+            <div className="flex items-center justify-between h-7 bg-[#00652c] rounded-full px-0.5 text-white shadow-xs">
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   updateQuantity(product.id, -1);
                 }}
-                className="w-7 h-7 flex items-center justify-center rounded-full hover:bg-white/20 active:scale-90 transition-all font-bold cursor-pointer"
+                className="w-6 h-6 flex items-center justify-center rounded-full hover:bg-white/20 active:scale-90 transition-all font-bold cursor-pointer"
               >
-                <span className="material-symbols-outlined text-[15px]">remove</span>
+                <span className="material-symbols-outlined text-[14px]">remove</span>
               </button>
-              <span className="text-[12px] font-black px-1 select-none">{qty}</span>
+              <span className="text-[11px] font-black select-none">{qty}</span>
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   updateQuantity(product.id, 1);
                 }}
-                className="w-7 h-7 flex items-center justify-center rounded-full hover:bg-white/20 active:scale-90 transition-all font-bold cursor-pointer"
+                className="w-6 h-6 flex items-center justify-center rounded-full hover:bg-white/20 active:scale-90 transition-all font-bold cursor-pointer"
               >
-                <span className="material-symbols-outlined text-[15px]">add</span>
+                <span className="material-symbols-outlined text-[14px]">add</span>
               </button>
             </div>
           )}

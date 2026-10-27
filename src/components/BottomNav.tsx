@@ -17,7 +17,7 @@ export const BottomNav: React.FC = () => {
   };
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 max-w-md mx-auto w-full z-40 pb-safe bg-[#ebffe5]/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(26,46,26,0.08)] border-t border-[#becabc]/30 box-border">
+    <nav className="fixed bottom-0 left-0 right-0 max-w-md mx-auto w-full z-40 pb-[env(safe-area-inset-bottom)] bg-[#ebffe5]/95 backdrop-blur-xl shadow-[0_-4px_20px_rgba(26,46,26,0.08)] border-t border-[#becabc]/30 box-border">
       <div className="flex justify-around items-center h-16 px-2 w-full">
         {/* Shop */}
         <button

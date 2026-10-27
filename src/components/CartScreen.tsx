@@ -165,13 +165,13 @@ export const CartScreen: React.FC = () => {
       {cartItems.length > 0 && (
         <button
           onClick={() => setIsMoMoModalOpen(true)}
-          className="w-full h-13 bg-[#15803d] hover:bg-[#00652c] text-white rounded-full font-black text-[15px] flex items-center justify-between px-5 shadow-lg active:scale-[0.98] transition-all cursor-pointer"
+          className="w-full h-13 bg-[#15803d] hover:bg-[#00652c] text-white rounded-full font-black text-[15px] flex items-center justify-between gap-2 px-5 shadow-lg active:scale-[0.98] transition-all cursor-pointer"
         >
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 min-w-0">
             <span className="material-symbols-outlined text-[20px]">contactless</span>
-            <span>Pay with MoMo (0597117861)</span>
+            <span className="truncate">Pay with MoMo</span>
           </div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 shrink-0 whitespace-nowrap">
             <span>GH₵ {itemsSubtotal.toFixed(2)}</span>
             <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
           </div>
