@@ -28,7 +28,7 @@ interface CartContextType {
   currentOrderId: string;
   setCurrentOrderId: (id: string) => void;
   currentOrder: OrderState | undefined;
-  placeMoMoOrder: (network: string, phone: string) => OrderState;
+  placeMoMoOrder: (network: string, phone: string, orderId?: string, customerName?: string) => OrderState;
 
   // Staff workflow actions
   updateOrderStatus: (orderId: string, status: OrderState['status']) => void;
@@ -56,6 +56,9 @@ interface CartContextType {
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
+
+/** Short pickup code shown on the receipt QR, e.g. SP-4821 */
+export const generateOrderId = () => `SP-${Math.floor(1000 + Math.random() * 9000)}`;
 
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [products] = useState<Product[]>(PROVISION_PRODUCTS);
@@ -144,16 +147,16 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     showToast('Basket cleared');
   };
 
-  const placeMoMoOrder = (network: string, phone: string): OrderState => {
-    const nextNum = Math.floor(20 + Math.random() * 80);
-    const newId = `SP-0${nextNum}`;
+  const placeMoMoOrder = (network: string, phone: string, orderId?: string, customerName?: string): OrderState => {
+    const newId = orderId || generateOrderId();
+    const timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }).toLowerCase();
 
     const newOrder: OrderState = {
       orderId: newId,
-      customerName: 'Ama Boateng',
+      customerName: customerName || 'Walk-in Customer',
       customerPhone: phone || '024 456 7890',
-      placedTime: 'Just now',
-      paidTime: 'Just now',
+      placedTime: timeStr,
+      paidTime: timeStr,
       status: 'paid',
       paymentMethod: network || 'MTN MoMo',
       items: [...cartItems],
